@@ -1,0 +1,54 @@
+---
+title: "Knudsen_Proj1_CheckPoint1"
+author: 'Leo Knudsen'
+format: html
+editor: visual
+---
+
+```{r, output=FALSE,echo=FALSE}
+plastics <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2021/2021-01-26/plastics.csv')
+
+plastics$
+```
+
+## Draft Report
+
+### Break Free from Plastic: Plastic Pollution Data
+
+#### Background
+
+Break free from plastic is a non profit group which tracks the plastic waste produced by companies in their community. They call them "brand audits" and they collect data annually and started in to do so in 2019. They aim to hold brands accountable for the waste they put into the environment.
+
+The data contains information such as the country where the cleanup occured, the company responsible for the waste, the number of volunteers who contributed, and the type of recyclable material in the waste.
+
+#### Data
+
+This is what the first few rows of the data set looks like:
+
+```{r,echo=FALSE}
+head(plastics)
+```
+
+Some required cleaning would be to transpose the data from wide to long format because each plastic type is currently in it's own column. The "empty" dummy variable seems to be redundant as 0 value in the rows would be empty. The "parent_company" variable may have some inconsistencies with spellings and capitalization.
+
+#### Research Questions
+
+1.  Which parent company is responsible for the most total plastic waste units in the years 2019 and 2020?
+2.  Does the type of plastic vary significantly based upon the country in which it was collected?
+
+Some questions that could be answered with supplemental data
+
+3.  Do countries with stricter regulations on plastic waste lead to lower amounts of total pollution?
+4.  Does the total amount of land touching the ocean of a country impact their total plastic pollution?
+
+#### Visualizations
+
+Data would be transposed into long format before these plots are generated
+
+Corresponding to research question 1:
+
+![](Desktop/Screenshot%202026-04-04%20at%209.25.19%20PM.png)
+
+Corresponding to research question 3:
+
+![](Desktop/Screenshot%202026-04-04%20at%209.37.42%20PM.png)
