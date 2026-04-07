@@ -8,7 +8,6 @@ editor: visual
 ```{r, output=FALSE,echo=FALSE}
 library(readr)
 plastics <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2021/2021-01-26/plastics.csv')
-
 ```
 
 ## Draft Report
@@ -47,8 +46,8 @@ Data would be transposed into long format before these plots are generated
 
 Corresponding to research question 1:
 
-![](Desktop/Screenshot%202026-04-04%20at%209.25.19%20PM.png)
+![](images/Screenshot 2026-04-06 at 5.22.34 PM.jpeg)
 
 Corresponding to research question 3:
 
-![](Desktop/Screenshot%202026-04-04%20at%209.37.42%20PM.png)
+![](images/Screenshot 2026-04-06 at 5.25.14 PM.jpeg)
